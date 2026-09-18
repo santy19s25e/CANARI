@@ -1,0 +1,2 @@
+# Solo biblioteca estandar de Python 3.10 o posterior.
+# No hay dependencias pip para ejecutar, simular o probar CANARI.

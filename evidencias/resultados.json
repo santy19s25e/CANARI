@@ -1,0 +1,159 @@
+{
+  "executed_at_utc": "2026-09-18T04:03:07.326+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "tests_run": 28,
+  "failures": 0,
+  "errors": 0,
+  "tests": [
+    {
+      "test": "test_canari.ApiTests.test_authentication_and_role_separation",
+      "result": "PASS",
+      "seconds": 0.011584
+    },
+    {
+      "test": "test_canari.ApiTests.test_bad_json_and_pagination",
+      "result": "PASS",
+      "seconds": 0.002525
+    },
+    {
+      "test": "test_canari.ApiTests.test_end_to_end_ingestion_and_export",
+      "result": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test": "test_canari.ApiTests.test_private_files_not_served",
+      "result": "PASS",
+      "seconds": 0.003125
+    },
+    {
+      "test": "test_canari.CoreTests.test_acknowledgement_does_not_clear_alarm",
+      "result": "PASS",
+      "seconds": 0.003806
+    },
+    {
+      "test": "test_canari.CoreTests.test_alarm_at_front_boundary",
+      "result": "PASS",
+      "seconds": 0.002303
+    },
+    {
+      "test": "test_canari.CoreTests.test_alarm_not_hidden_by_missing_variable",
+      "result": "PASS",
+      "seconds": 0.00199
+    },
+    {
+      "test": "test_canari.CoreTests.test_backup_integrity",
+      "result": "PASS",
+      "seconds": 0.003237
+    },
+    {
+      "test": "test_canari.CoreTests.test_bad_configuration_rejected",
+      "result": "PASS",
+      "seconds": 0.001328
+    },
+    {
+      "test": "test_canari.CoreTests.test_below_warning",
+      "result": "PASS",
+      "seconds": 0.001657
+    },
+    {
+      "test": "test_canari.CoreTests.test_concurrent_duplicate_is_atomic",
+      "result": "PASS",
+      "seconds": 0.006632
+    },
+    {
+      "test": "test_canari.CoreTests.test_delayed_message_does_not_replace_latest",
+      "result": "PASS",
+      "seconds": 0.00277
+    },
+    {
+      "test": "test_canari.CoreTests.test_duplicate_is_idempotent",
+      "result": "PASS",
+      "seconds": 0.002184
+    },
+    {
+      "test": "test_canari.CoreTests.test_duplicate_with_changed_payload_conflicts",
+      "result": "PASS",
+      "seconds": 0.002102
+    },
+    {
+      "test": "test_canari.CoreTests.test_invalid_timestamp_rejected",
+      "result": "PASS",
+      "seconds": 0.001033
+    },
+    {
+      "test": "test_canari.CoreTests.test_invalid_values_rejected",
+      "result": "PASS",
+      "seconds": 0.001884
+    },
+    {
+      "test": "test_canari.CoreTests.test_laboratory_requires_calibration_reference",
+      "result": "PASS",
+      "seconds": 0.002041
+    },
+    {
+      "test": "test_canari.CoreTests.test_location_specific_threshold",
+      "result": "PASS",
+      "seconds": 0.002671
+    },
+    {
+      "test": "test_canari.CoreTests.test_missing_measurement_is_incomplete",
+      "result": "PASS",
+      "seconds": 0.002094
+    },
+    {
+      "test": "test_canari.CoreTests.test_no_samples_never_looks_normal",
+      "result": "PASS",
+      "seconds": 0.001105
+    },
+    {
+      "test": "test_canari.CoreTests.test_oxygen_boundaries",
+      "result": "PASS",
+      "seconds": 0.003841
+    },
+    {
+      "test": "test_canari.CoreTests.test_recent_receipt_does_not_refresh_old_capture",
+      "result": "PASS",
+      "seconds": 0.001831
+    },
+    {
+      "test": "test_canari.CoreTests.test_restart_preserves_data_and_acknowledgement",
+      "result": "PASS",
+      "seconds": 0.003019
+    },
+    {
+      "test": "test_canari.CoreTests.test_sensor_fault",
+      "result": "PASS",
+      "seconds": 0.002283
+    },
+    {
+      "test": "test_canari.CoreTests.test_stale_at_exact_expiry",
+      "result": "PASS",
+      "seconds": 0.002677
+    },
+    {
+      "test": "test_canari.CoreTests.test_thermal_demonstration_rules",
+      "result": "PASS",
+      "seconds": 0.003348
+    },
+    {
+      "test": "test_canari.CoreTests.test_unknown_node_source_and_fields_rejected",
+      "result": "PASS",
+      "seconds": 0.001098
+    },
+    {
+      "test": "test_canari.CoreTests.test_warning_exact_boundary",
+      "result": "PASS",
+      "seconds": 0.001906
+    }
+  ],
+  "scope": "Pruebas de software con muestras sintéticas. No validan precisión de sensores, radio, mina ni aceptación de usuarios.",
+  "experiment": {
+    "samples": 30,
+    "matching_states": 30,
+    "median_http_ms": 1.6095000000000002,
+    "p95_http_ms": 3.828,
+    "max_http_ms": 5.747,
+    "method": "30 solicitudes POST secuenciales en loopback; perf_counter desde envío hasta lectura de respuesta; P95 por rango más próximo. Sin sensor ni interfaz gráfica."
+  }
+}

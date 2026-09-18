@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "sample_interval_seconds": 3,
+  "stale_after_seconds": 15,
+  "ch4_warning_vol_pct": 0.5,
+  "o2_min_vol_pct": 19.5,
+  "o2_max_vol_pct": 23.5,
+  "temperature_warning_c": 30.0,
+  "temperature_alarm_c": 35.0,
+  "nodes": [
+    {"id": "N01", "label": "Frente de avance", "location_type": "frente", "ch4_alarm_vol_pct": 1.0, "source": "simulation"},
+    {"id": "N02", "label": "Retorno principal", "location_type": "retorno_principal", "ch4_alarm_vol_pct": 1.0, "source": "simulation"},
+    {"id": "N03", "label": "Retorno del tajo", "location_type": "retorno_tajo", "ch4_alarm_vol_pct": 1.5, "source": "simulation"}
+  ],
+  "references": {
+    "ch4": "Decreto 1886 de 2015, articulo 53; concentracion en porcentaje de volumen, no porcentaje LEL.",
+    "o2": "Decreto 1886 de 2015, articulo 38.",
+    "warning": "0.5 % vol CH4 es una prealerta de diseno de esta demostracion; no un limite general normativo.",
+    "temperature": "30 y 35 grados C son ejemplos configurables; no equivalen a limites normativos de estres termico.",
+    "humidity": "Registro descriptivo sin umbral de riesgo implementado.",
+    "url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=63072"
+  }
+}
